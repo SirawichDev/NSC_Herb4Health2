@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E2723"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+
+    tools:context="com.example.asus.herb4health.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/back7" />
+
+
+            <!--Funtion1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#5D4037"
+                    android:onClick="funtionclick2"
+                    android:text="ข้อมูลสมุนไพรทั่วไป"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+
+                </Button>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/buttonother2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="0.5dp"
+                android:visibility="gone">
+
+                <!--Buttonother1.1-->
+                <Button
+                    android:id="@+id/buttonothers11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#8D6E63"
+                    android:onClick="GoSearch"
+                    android:text="ค้นหาเลย"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+                </Button>
+
+                <!--buttonothers1.2-->
+                <Button
+                    android:id="@+id/buttonothers12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#8D6E63"
+                    android:paddingTop="0.5dp"
+                    android:text="แบ่งตามส่วนประกอบ"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+                </Button>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0.5dp"></LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- สมุนไพรกับกลุ่มอาการ-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="0.5dp">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#5D4037"
+                    android:onClick="funtionclick3"
+                    android:text="สมุนไพรสำหรับกลุ่มอาการและโรคต่างๆ"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"></Button>
+
+            </LinearLayout>
+            <!--android:onClick="GoBasis"-->
+            <LinearLayout
+                android:id="@+id/buttonother3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:visibility="gone">
+
+                <!--Buttonother1.2-->
+                <Button
+                    android:id="@+id/buttonothers35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#8D6E63"
+                    android:onClick="GoUpload"
+                    android:text="คลังสมุนไพร"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+                </Button>
+
+                <!--Buttonother1.3-->
+                <Button
+                    android:id="@+id/buttonothers30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#8D6E63"
+                    android:onClick="GoNewlist"
+                    android:text="กลุ่มอาการและโรคต่างๆ"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+                </Button>
+
+                <!--buttonothers1.3-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0.5dp"></LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonothers22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#8D6E63"
+                    android:onClick="GoBodyhumen"
+                    android:text="แบ่งตามอวัยวะในร่างกาย"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+                </Button>
+
+
+            </LinearLayout>
+
+
+
+            <!--แบบฝึกหัดเสริมความรู้ใหม่-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <!--Button1-->
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#5D4037"
+                    android:onClick="funtionclick1"
+                    android:text="แบบฝึกหัดเสริมความรู้"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+                </Button>
+            </LinearLayout>
+
+
+            <!--Funtionother1-->
+
+            <LinearLayout
+                android:id="@+id/buttonother1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:visibility="gone">
+                <!--Buttonother1-->
+                <Button
+                    android:id="@+id/buttonothers1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#8D6E63"
+                    android:onClick="GoQuiz1"
+                    android:text="ระดับง่าย"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+                </Button>
+
+                <!--buttonothers2-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0.5dp"></LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonothers2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#8D6E63"
+                    android:text="ระดับปานกลาง"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+                </Button>
+                <!--buttonothers3-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0.5dp"></LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonothers3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#8D6E63"
+                    android:text="ระดับยาก"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp">
+
+                </Button>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
