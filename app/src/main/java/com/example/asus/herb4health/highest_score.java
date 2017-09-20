@@ -9,6 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import ru.dimorinny.floatingtextbutton.FloatingTextButton;
 
 public class highest_score extends AppCompatActivity {
 
@@ -18,6 +21,9 @@ public class highest_score extends AppCompatActivity {
         setContentView(R.layout.activity_highest_score);
         TextView txtScore = (TextView) findViewById(R.id.textScore);
         TextView txtHighScore = (TextView) findViewById(R.id.textHighScore);
+
+
+
         // receive the score from last activity by Intent
         Intent intent = getIntent();
         int score = intent.getIntExtra("score", 0);
